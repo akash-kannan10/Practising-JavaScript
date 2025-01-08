@@ -6,25 +6,15 @@
 
 <body>
     <h1 id="file">LeoDas</h1>
-    <button type="button" onclick="window.print()">Click</button>
+    <button >View Date & TIme</button>
+
+    <p id="time" style="color:blueviolet" onmouseover="style.color='red'" onmouseout="style.color='blue'">Date & Time on Me :)</p>
 </body>
 
-<script>   
-    function Person (fname, lname, age, nationality = 'Indian') {
-        this.FirstName = fname;
-        this.LastName = lname;
-        this.Age = age;
-        this.nationality = nationality;
-    }
-    
-    
-    const Person1 = new Person('Akash', 'Kannan', 18);
-    Person1.EyeColor = 'Black';
-    const Person2 = new Person
-
-
-    document.getElementById("file").innerHTML = 
-    console.log(Person1)
+<script>
+function displayDate() {
+    return document.getElementById('time').innerHTML = Date()
+}   
 </script>
 
 </html>
