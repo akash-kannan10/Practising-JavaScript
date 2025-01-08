@@ -10,19 +10,21 @@
 </body>
 
 <script>   
-    function Person (fname, lname, age, nationality) {
+    function Person (fname, lname, age, nationality = 'Indian') {
         this.FirstName = fname;
         this.LastName = lname;
         this.Age = age;
         this.nationality = nationality;
     }
     
-    const Person1 = new Person('Akash', 'Kannan', 18, 'Indian');
+    
+    const Person1 = new Person('Akash', 'Kannan', 18);
+    Person1.EyeColor = 'Black';
     const Person2 = new Person
-    console.log(Person1)
 
-    document.getElementById("file").innerHTML =
-    console.log()
+
+    document.getElementById("file").innerHTML = 
+    console.log(Person1)
 </script>
 
 </html>
