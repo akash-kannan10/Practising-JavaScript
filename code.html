@@ -7,14 +7,12 @@
 <body>
     <h1 id="file">LeoDas</h1>
     <button onclick="displayDate()" >View Date & TIme</button>
-
-    <p id="time" style="color:blueviolet" onmouseover="style.color='red'" onmouseout="style.color='blue'">Date & Time on Me :)</p>
 </body>
 
 <script>
-function displayDate() {
-    return document.getElementById('time').innerHTML = Date()
-}   
+let text = `This text is something`
+document.getElementById('file').innerHTML = text
+console.log(text)  
 </script>
 
 </html>
