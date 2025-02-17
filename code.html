@@ -6,13 +6,22 @@
 
 <body>
 
-    <h1 id="file">LeoDas</h1>
+    <h1 id="demo">LeoDas</h1>
+    <input id="input" type="text">
+    <button id="click_button" onclick="test()">Click Button</button>
+    <p id="return_msg"></p>
 
 </body>
 
 <script>
-    let empty = "Im a super hero with Super powers"
-    console.log(empty)
-    console.log(/SUPER/i.test(empty))
+    const person1 = {
+        name : "Akash",
+        age : 18,
+        dept : "CSE",
+    }
+
+    Object.preventExtensions(person1);
+    Object.seal(person1);
+    console.log(Object.isFrozen(person1))   
 </script>
 </html>
